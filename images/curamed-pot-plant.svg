@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 300" width="100%" height="100%">
+  <defs>
+    <!-- Gradients para as folhas -->
+    <linearGradient id="leafGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d5a27"/>
+      <stop offset="70%" stop-color="#1b3d17"/>
+      <stop offset="100%" stop-color="#0f250d"/>
+    </linearGradient>
+    <linearGradient id="leafGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b7a33"/>
+      <stop offset="70%" stop-color="#224d1d"/>
+      <stop offset="100%" stop-color="#143011"/>
+    </linearGradient>
+    <linearGradient id="leafGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4d9b43"/>
+      <stop offset="100%" stop-color="#295b23"/>
+    </linearGradient>
+
+    <!-- Gradients para o vaso -->
+    <linearGradient id="potGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#eef2f5"/>
+      <stop offset="70%" stop-color="#d2dbe0"/>
+      <stop offset="100%" stop-color="#b0bec5"/>
+    </linearGradient>
+    <linearGradient id="potRimGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eef2f5"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cfd8dc"/>
+    </linearGradient>
+    <radialGradient id="potShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(15,23,42,0.15)"/>
+      <stop offset="100%" stop-color="rgba(15,23,42,0)"/>
+    </radialGradient>
+
+    <!-- Gradients para as pétalas das orquídeas -->
+    <linearGradient id="petalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="85%" stop-color="#fdfdfd"/>
+      <stop offset="100%" stop-color="#f3f4f6"/>
+    </linearGradient>
+    <linearGradient id="orchidCenter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#facc15"/>
+      <stop offset="50%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+
+    <!-- Filtro de sombra suave para as flores -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Sombra no chão do vaso -->
+  <ellipse cx="60" cy="285" rx="35" ry="8" fill="url(#potShadow)"/>
+
+  <!-- ── PLANT STEMS & LEAVES (Hastes e Folhas) ── -->
+  <g id="foliage">
+    <!-- Hastes de suporte das orquídeas (finas e elegantes) -->
+    <path d="M 60,220 Q 52,140 45,60" fill="none" stroke="#224d1d" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 60,220 Q 72,130 80,45" fill="none" stroke="#224d1d" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Molas de suporte (clips pretos modernos de jardinagem) -->
+    <rect x="53" y="145" width="4" height="4" rx="1" fill="#1e293b"/>
+    <rect x="63" y="115" width="4" height="4" rx="1" fill="#1e293b"/>
+
+    <!-- Folhas da base (grandes, largas, estilo orquídea Phalaenopsis) -->
+    <!-- Folha esquerda baixa -->
+    <path d="M 50,230 C 15,225 5,255 10,270 C 15,280 40,265 55,245 Z" fill="url(#leafGrad1)"/>
+    <!-- Folha direita baixa -->
+    <path d="M 70,230 C 105,225 115,255 110,270 C 105,280 80,265 65,245 Z" fill="url(#leafGrad1)"/>
+    <!-- Folha esquerda média -->
+    <path d="M 52,225 C 20,205 15,225 22,240 C 30,250 50,240 58,235 Z" fill="url(#leafGrad2)"/>
+    <!-- Folha direita média -->
+    <path d="M 68,225 C 100,205 105,225 98,240 C 90,250 70,240 62,235 Z" fill="url(#leafGrad2)"/>
+    <!-- Folhas centrais menores eretas -->
+    <path d="M 55,220 C 40,185 45,180 50,185 C 55,190 60,210 58,222 Z" fill="url(#leafGradLight)"/>
+    <path d="M 65,220 C 80,185 75,180 70,185 C 65,190 60,210 62,222 Z" fill="url(#leafGradLight)"/>
+  </g>
+
+  <!-- ── ORCHID FLOWERS (Flores de Orquídea Branca) ── -->
+  <g id="flowers" filter="url(#shadow)">
+    <!-- ORQUÍDEA 1: Haste Esquerda - Flor de Baixo (Ponto 51, 155) -->
+    <g transform="translate(51, 155) scale(0.9)">
+      <!-- Pétala superior -->
+      <path d="M 0,0 C -8,-25 8,-25 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <!-- Pétalas laterais largas (pétalas principais) -->
+      <path d="M 0,0 C -30,-12 -25,12 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C 30,-12 25,12 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <!-- Sépalas inferiores (traseiras) -->
+      <path d="M 0,0 C -20,20 -5,28 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5" opacity="0.95"/>
+      <path d="M 0,0 C 20,20 5,28 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5" opacity="0.95"/>
+      <!-- Centro da Flor (Labellum / Miolo) -->
+      <path d="M -5,2 C -8,12 8,12 5,2 C 4,-2 -4,-2 -5,2 Z" fill="url(#orchidCenter)"/>
+      <circle cx="0" cy="2" r="2.5" fill="#fef08a"/>
+    </g>
+
+    <!-- ORQUÍDEA 2: Haste Esquerda - Flor do Meio (Ponto 46, 105) -->
+    <g transform="translate(46, 105) scale(0.95)">
+      <path d="M 0,0 C -8,-25 8,-25 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C -30,-12 -25,12 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C 30,-12 25,12 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C -20,20 -5,28 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C 20,20 5,28 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M -5,2 C -8,12 8,12 5,2 C 4,-2 -4,-2 -5,2 Z" fill="url(#orchidCenter)"/>
+      <circle cx="0" cy="2" r="2.5" fill="#fef08a"/>
+    </g>
+
+    <!-- ORQUÍDEA 3: Haste Esquerda - Flor Superior (Ponto 45, 62) -->
+    <g transform="translate(45, 62) scale(0.85) rotate(-10)">
+      <path d="M 0,0 C -8,-25 8,-25 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C -30,-12 -25,12 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C 30,-12 25,12 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C -20,20 -5,28 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C 20,20 5,28 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M -5,2 C -8,12 8,12 5,2 C 4,-2 -4,-2 -5,2 Z" fill="url(#orchidCenter)"/>
+      <circle cx="0" cy="2" r="2.5" fill="#fef08a"/>
+    </g>
+
+    <!-- ORQUÍDEA 4: Haste Direita - Flor de Baixo (Ponto 68, 135) -->
+    <g transform="translate(68, 135) scale(0.9) rotate(15)">
+      <path d="M 0,0 C -8,-25 8,-25 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C -30,-12 -25,12 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C 30,-12 25,12 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C -20,20 -5,28 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C 20,20 5,28 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M -5,2 C -8,12 8,12 5,2 C 4,-2 -4,-2 -5,2 Z" fill="url(#orchidCenter)"/>
+      <circle cx="0" cy="2" r="2.5" fill="#fef08a"/>
+    </g>
+
+    <!-- ORQUÍDEA 5: Haste Direita - Flor Superior (Ponto 77, 85) -->
+    <g transform="translate(77, 85) scale(0.85) rotate(20)">
+      <path d="M 0,0 C -8,-25 8,-25 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C -30,-12 -25,12 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C 30,-12 25,12 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C -20,20 -5,28 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M 0,0 C 20,20 5,28 0,0 Z" fill="url(#petalGrad)" stroke="#e5e7eb" stroke-width="0.5"/>
+      <path d="M -5,2 C -8,12 8,12 5,2 C 4,-2 -4,-2 -5,2 Z" fill="url(#orchidCenter)"/>
+      <circle cx="0" cy="2" r="2.5" fill="#fef08a"/>
+    </g>
+
+    <!-- BOTÕES FECHADOS NO TOPO (Buds) -->
+    <!-- Topo Esquerdo -->
+    <circle cx="43" cy="40" r="5" fill="#dcfce7" stroke="#224d1d" stroke-width="0.75"/>
+    <circle cx="43" cy="40" r="3" fill="#ffffff" opacity="0.6"/>
+    <path d="M 44,45 Q 43,41 43,40" fill="none" stroke="#224d1d" stroke-width="1.5"/>
+
+    <circle cx="45" cy="25" r="3.5" fill="#dcfce7" stroke="#224d1d" stroke-width="0.5"/>
+    
+    <!-- Topo Direito -->
+    <circle cx="82" cy="30" r="4.5" fill="#dcfce7" stroke="#224d1d" stroke-width="0.75"/>
+    <circle cx="82" cy="30" r="2.5" fill="#ffffff" opacity="0.6"/>
+    <path d="M 81,35 Q 82,31 82,30" fill="none" stroke="#224d1d" stroke-width="1.5"/>
+  </g>
+
+  <!-- ── CERAMIC POT (Vaso de Cerâmica Premium) ── -->
+  <g id="ceramic-pot" filter="url(#shadow)">
+    <!-- Base de terra escura interior -->
+    <ellipse cx="60" cy="226" rx="20" ry="4" fill="#332211"/>
+
+    <!-- Vaso Cónico Moderno -->
+    <!-- Corpo do Vaso -->
+    <path d="M 39,225 L 81,225 L 73,280 L 47,280 Z" fill="url(#potGrad)" stroke="#b0bec5" stroke-width="0.5"/>
+    
+    <!-- Bordo do Vaso (Rim) -->
+    <ellipse cx="60" cy="225" rx="21" ry="5" fill="url(#potRimGrad)" stroke="#b0bec5" stroke-width="0.5"/>
+    <ellipse cx="60" cy="225" rx="19" ry="3.5" fill="#455a64" opacity="0.2"/>
+  </g>
+</svg>
