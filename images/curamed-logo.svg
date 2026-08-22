@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 180" width="580" height="180" role="img" aria-label="CuraMed — Clínica &amp; Seguros de Saúde">
+  <title>CuraMed</title>
+
+  <!--
+    Logótipo do tema CuraMed (identidade Midnight Azure).
+    SVG e não bitmap porque o mesmo ficheiro serve dois tamanhos muito diferentes:
+    o painel da recepção 3D (até 580px) e o cabeçalho das páginas (36px de altura).
+    O glow é aplicado por CSS (.cm3d-logo-img), por isso aqui fica limpo.
+    Pensado para fundos escuros — é onde o tema o usa.
+  -->
+
+  <defs>
+    <linearGradient id="cm-tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Marca: cruz médica sobre azulejo com o gradiente da paleta -->
+  <rect x="8" y="24" width="132" height="132" rx="34" fill="url(#cm-tile)"/>
+  <g fill="#FFFFFF">
+    <rect x="63" y="57"  width="22" height="66" rx="11"/>
+    <rect x="41" y="79"  width="66" height="22" rx="11"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="168" y="112"
+        font-family="'Space Grotesk','Barlow','Segoe UI',system-ui,sans-serif"
+        font-size="76" font-weight="700" letter-spacing="-1.6" fill="#FFFFFF">CuraMed</text>
+
+  <!-- Assinatura -->
+  <text x="171" y="146"
+        font-family="'Inter','Source Sans Pro','Segoe UI',system-ui,sans-serif"
+        font-size="19" font-weight="500" letter-spacing="2.6" fill="#9FB3CE">CLÍNICA &amp; SEGUROS DE SAÚDE</text>
+</svg>
